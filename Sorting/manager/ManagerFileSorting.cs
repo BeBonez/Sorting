@@ -1,4 +1,5 @@
 ﻿using Sorting.enums;
+using Sorting.sorting.efficient;
 using Sorting.sorting.simple;
 
 namespace Sorting.manager
@@ -23,25 +24,29 @@ namespace Sorting.manager
                     ordenado = InsertionSort.Sorting(vet);
                     break;
 
-                case Sortings.BUCKETSORT:
-                    break;
+                //case Sortings.BUCKETSORT:
+                //    break;
 
-                case Sortings.COUNTINGSORT:
-                    break;
+                //case Sortings.COUNTINGSORT:
+                //    break;
 
-                case Sortings.RADIXSORT:
-                    break;
+                //case Sortings.RADIXSORT:
+                //    break;
 
                 case Sortings.SHELLSORT:
+                    ordenado = ShellSort.Sorting(vet);
                     break;
 
                 case Sortings.QUICKSORT:
+                    //ordenado = QuickSort.Sorting(vet);
                     break;
 
                 case Sortings.MERGESORT:
+                    //ordenado = MergeSort.Sorting(vet);
                     break;
 
                 case Sortings.HEAPSORT:
+                    ordenado = HeapSort.Sorting(vet);
                     break;
             }
         }
