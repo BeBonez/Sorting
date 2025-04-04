@@ -20,7 +20,7 @@ public class Program
         Console.WriteLine("4 - Quick sort");
         Console.WriteLine("5 - Shell sort");
 
-        int escolha = int.Parse(Console.ReadLine());
+        int escolha = int.Parse(Console.ReadLine()!);
 
         switch (escolha)
         {
