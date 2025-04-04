@@ -1,4 +1,6 @@
 ﻿using Sorting.basic_class.@static;
+using Sorting.manager;
+using Sorting.print;
 
 public class Program
 {
@@ -8,7 +10,7 @@ public class Program
         // https://pt.overleaf.com/read/kptbxrwtrzch#8b9776
 
 
-        //int[] _vet = ManagerFileReader.Arquivo10TXT();
+        int[] _vet = ManagerFileReader.Arquivo10TXT();
 
         // Crie um menu que solicite ao usuário qual é o arquivo que será lido e qual algoritmo deverá ser executado
 
