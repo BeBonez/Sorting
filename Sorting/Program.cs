@@ -9,8 +9,8 @@ public class Program
         // https://github.com/accj1990/Sorting.git
         // https://pt.overleaf.com/read/kptbxrwtrzch#8b9776
 
-
         int[] _vet = ManagerFileReader.Arquivo10TXT();
+        int[] _vet2 = ManagerFileReader.Arquivo1000000TXT();
 
         // Crie um menu que solicite ao usuário qual é o arquivo que será lido e qual algoritmo deverá ser executado
 
@@ -33,7 +33,6 @@ public class Program
             case 5: SelectShellSort(_vet); break;
             default: SelectBubbleSort(_vet); break;
         }
-
 
         // Fila, Pilha e Lista em alocação estática
         Fila f = new Fila(5);
@@ -82,7 +81,6 @@ public class Program
         p.Mostrar();
 
     }
-
     
     public static void SelectBubbleSort(int[] vet)
     {
@@ -137,6 +135,4 @@ public class Program
 
         PrintSolutionStatic.ImprimirArrayMesmaLinha(vet, Sorting.enums.Sortings.SHELLSORT);
     }
-
-
 }
