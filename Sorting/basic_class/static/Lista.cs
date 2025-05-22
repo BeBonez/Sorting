@@ -28,26 +28,56 @@
 
         public bool InserirInicio(int item)
         {
-            return true;// implemente
+            lista[0] = item;
+
+            return true;
         }
 
         public bool InserirPosicao(int pos)
         {
-            return true;// implemente
+            if (pos < 0 || pos >= lista.Length)
+            {
+                // posição inválida
+                return false;
+            }
+
+            lista[pos] = 1;
+
+            return true;
         }
 
         public int RemoverFim()
         {
-            return -1; // implemente
+            if (cont > 0)
+            {
+                lista[cont] = 0;
+                cont--;
+
+                return lista[cont + 1];
+            }
+            else
+            {
+                return -1;
+            }       
         }
 
         public int RemoverInicio()
         {
-            return -1; // implemente
+            lista[0] = 0;
+
+            return -1;
         }
 
         public int RemoverPosicao(int pos)
         {
+            if (pos < 0 || pos >= lista.Length)
+            {
+                // posição inválida
+                return 0;
+            }
+
+            lista[pos] = 0;
+
             return -1; // implemente
         }
 

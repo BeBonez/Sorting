@@ -38,11 +38,11 @@ namespace Sorting.manager
                     break;
 
                 case Sortings.QUICKSORT:
-                    //ordenado = QuickSort.Sorting(vet);
+                    ordenado = QuickSort.Sorting(vet);
                     break;
 
                 case Sortings.MERGESORT:
-                    //ordenado = MergeSort.Sorting(vet);
+                    ordenado = MergeSort.Sorting(vet);
                     break;
 
                 case Sortings.HEAPSORT:
